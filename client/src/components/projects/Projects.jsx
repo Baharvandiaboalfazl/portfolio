@@ -41,7 +41,7 @@ const Projects = () => {
               >
                 {image.map((photoUrl, index) => (
                   <SwiperSlide key={index}>
-                    <span>عکس را به سمت چپ یا راست بکشید</span>
+                    <span className="note">عکس را به سمت چپ یا راست بکشید</span>
                     <img
                       className="projects__img"
                       src={photoUrl}
