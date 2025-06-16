@@ -1,0 +1,209 @@
+.main__container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  width: auto;
+  display: flex;
+  text-align: center;
+  z-index: 1;
+}
+
+.home__details {
+  width: 480px;
+  margin-top: 6rem;
+}
+
+.home__img {
+  height: 26rem;
+  margin-bottom: 1.5rem;
+  right: 0;
+}
+
+.home__name {
+  color: var(--text-900);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 1rem;
+}
+
+.text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-left: 0.3rem solid var(--primary-500);
+  animation: typeAndDelete 6s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+}
+
+.home__education {
+  color: var(--text-700);
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.home__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.home__social-link {
+  color: var(--text-800);
+  font-size: 1.3rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home__social-link:hover {
+  color: var(--primary-400);
+}
+
+.home__btn span {
+  margin-left: 0.5rem;
+}
+
+.shapes {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shape {
+  position: absolute;
+  width: 27px;
+  height: 29px;
+  opacity: 0.2;
+}
+
+body[data-theme="dark"] .shape {
+  filter: invert(39%) sepia(97%) saturate(2333%) hue-rotate(185deg)
+    brightness(105%) contrast(101%);
+  opacity: 0.2;
+}
+
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 10%;
+}
+
+.s5 {
+  left: 5%;
+  top: 30%;
+}
+
+.s6 {
+  left: 36%;
+  bottom: 10%;
+}
+
+.s7 {
+  top: 20%;
+  right: 25%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  top: 45%;
+  right: 11%;
+}
+
+.s11 {
+  bottom: 10%;
+  right: 2%;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-left-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 27rem;
+  }
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .intro {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home__social-link {
+    font-size: 1.125rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__details {
+    width: 100%;
+    margin: 0;
+  }
+
+  .shapes {
+    width: 90%;
+  }
+
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 23.5rem;
+    }
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+}

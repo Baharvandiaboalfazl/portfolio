@@ -1,0 +1,68 @@
+.education {
+  padding: 1.5rem 7rem;
+}
+
+.education__item {
+  position: relative;
+  padding-left: 3.125rem;
+  padding-bottom: 3.125rem;
+  margin-top: 1rem;
+}
+
+.education__item:last-child {
+  padding-bottom: 0;
+}
+
+.education__item::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 70%;
+  background-color: var(--primary-500);
+  position: absolute;
+  left: 0.75rem;
+  top: 2.5rem;
+}
+
+.education .icon-wrench,
+.education .icon-graduation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: var(--h2-font-size);
+  color: var(--text);
+  padding: 0.4375rem 0;
+}
+
+.education__date {
+  color: #8b88b1;
+  font-size: var(--small-font-size);
+}
+
+.education__title {
+  font-size: var(--h3-font-size);
+  color: var(--text);
+  margin: 0.5rem 0;
+}
+
+.education__desc {
+  color: var(--text);
+}
+
+@media screen and (max-width: 1024px) {
+  .education__container {
+    grid-template-columns: 100%;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+
+  .education__item::before {
+    left: 2px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .education {
+    padding: 1rem 2rem;
+  }
+}

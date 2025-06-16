@@ -1,0 +1,7 @@
+.category__container {
+  margin-bottom: 1.5rem;
+}
+
+body[data-theme="dark"] .category__btn {
+  color: white;
+}
