@@ -44,7 +44,7 @@
 2.  **کلون کردن مخزن (Repository):**
 
     ```bash
-    git clone <URL_REPOSITORY_شما>
+    git clone https://github.com/baharvandiaboalfazl/portfolio.git
     cd client
     ```
 
