@@ -1,0 +1,171 @@
+.projects__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.projects__card {
+  background-color: var(--container-color);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+
+.enter {
+  margin: 1rem 0;
+}
+
+.swiper {
+  height: fit-content !important;
+}
+
+.swiper-wrapper {
+  height: fit-content !important;
+}
+
+.section__img {
+  column-span: 1;
+  width: 100%;
+}
+
+.accordion {
+  background-color: #0ea5e9;
+  z-index: 100;
+}
+
+.projects__img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.projects__box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.projects__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__title {
+  font-size: var(--h3-font-size);
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.projects__tags {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.tag {
+  width: 3rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  color: black;
+}
+
+.tag:nth-child(1) {
+  background-color: #eff6ff;
+  color: #4186f6;
+}
+
+.tag:nth-child(2) {
+  background-color: #ecfeff;
+  color: #06b6d4;
+}
+
+.tag:nth-child(3) {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.tag:nth-child(4) {
+  background-color: #fff0f3;
+  color: #ff4d6d;
+}
+
+.tag:nth-child(5) {
+  background-color: #e1d8f7;
+  color: #b596e5;
+}
+
+.tag:nth-child(6) {
+  background-color: #e8fccf;
+  color: #3e8914;
+}
+
+.projects__description {
+  padding: 20px;
+  color: var(--text);
+}
+
+.projects__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects__btn {
+  margin-bottom: 0.5rem;
+  color: var(--primary-700);
+}
+
+.projects__icon i {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.projects__btn:hover {
+  color: var(--primary-400);
+}
+
+.projects__icon i:hover {
+  opacity: 0.8;
+}
+
+.note {
+  color: var(--text);
+}
+
+.github {
+  font-size: 30px;
+  color: #343a40;
+}
+
+.github:hover {
+  color: #495057;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}

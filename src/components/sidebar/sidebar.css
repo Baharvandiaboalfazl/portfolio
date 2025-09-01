@@ -1,0 +1,165 @@
+.aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2.5rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.nav__logo-img {
+  width: 100px;
+  height: 80px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #33415c;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 15px;
+  border: 2px solid transparent;
+}
+
+body[data-theme="dark"] .nav__link svg {
+  color: var(--background-900);
+}
+
+.nav__link svg {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.nav__link-name {
+  display: none;
+}
+
+.nav__item:hover .nav__link {
+  width: 180px;
+  border-radius: 30px;
+  border-color: var(--secondary-500);
+  justify-content: flex-start;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.nav__item:hover .nav__link-name {
+  display: inline;
+}
+
+.nav__link.active {
+  border-color: var(--secondary-500);
+}
+
+.mobile__nav-links {
+  display: none;
+}
+
+.nav__footer {
+  padding: 0 2.2rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body[data-theme="dark"] .nav__footer {
+  opacity: 0.6;
+}
+
+.blog {
+  background-color: var(--card-background);
+  color: var(--background-900);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#theme-toggle {
+  background-color: var(--card-background);
+  color: var(--background-900);
+  font-size: 24px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.flex {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    display: none;
+  }
+
+  .mobile__nav-list {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--text-200);
+    background-color: var(--background-50);
+    z-index: 10;
+  }
+
+  .mobile__nav-links {
+    display: block;
+    cursor: pointer;
+    display: flex;
+    gap: 0.3rem;
+    color: var(--text-900);
+    font-size: 22px;
+  }
+
+  .mobile__nav-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  #theme-toggle {
+    font-size: 18px;
+  }
+
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .mobile__theme-toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mobile__nav-links {
+    font-size: 18px;
+  }
+}
